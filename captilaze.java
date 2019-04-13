@@ -6,7 +6,7 @@ public static void main(String args[])
 Scanner sc=new Scanner(System.in);
 String str=sc.nextLine();
 char[] ch=str.toCharArray();
-int len=ch.length();
+int len=ch.length;
   if (ch[0]>='a' && ch[0]<='z')
   {
     ch[0]=(char)(ch[0]-'a'+'A');
@@ -14,7 +14,7 @@ int len=ch.length();
       
 for (int i=0;i<=len-1;i++)
 {
-if (ch[i]=='')
+if (ch[i]==' ')
 {
 i++;
 if (ch[i]>='a' && ch[i]<='z')
