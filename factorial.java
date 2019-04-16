@@ -1,14 +1,22 @@
-public class Factorial {
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	  Scanner sc=new Scanner(System.in);
+	  int n=sc.nextInt();
 
-    public static void main(String[] args) {
+         int factorial = 1;
 
-        int num = 10;
-        long factorial = 1;
-        for(int i = 1; i <= num; ++i)
+        for(int i = 1; i <= n; ++i)
+
         {
-            // factorial = factorial * i;
+
+            
+
             factorial *= i;
+
         }
-        System.out.println("Factorial of %d = %d", num, factorial);
-    ]
+
+        System.out.println(factorial);
+	}
 }
